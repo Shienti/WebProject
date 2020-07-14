@@ -1,0 +1,170 @@
+
+.dropbtn {
+    background-color: transparent;
+    color: black;
+    padding: 20px;
+    font-size: 25px;
+    min-width: 160px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+  }
+  .text {
+    vertical-align: middle;
+    display: inline-block;
+  }
+  .icon{
+    padding-right: 20px;
+    vertical-align: middle;
+    display: inline-block;
+  }
+  .dropdown {
+    display: inline-block;
+    float: none;
+    position: absolute;
+    top: 50px;
+    right: 0%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    text-align: left;
+    background-color: yellowgreen;
+    min-width: 160px;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a.active{
+      background-color: yellowgreen;
+  }
+  
+  .dropdown-content a:hover {
+      background-color: #3e8e41;
+    }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+      color: white;
+    background-color: #3e8e41;
+  }
+
+  /* Animowany background strony */
+body {
+	background: linear-gradient(-90deg, #52eebf, #1cc298, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 30s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.inputDiv{
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    padding: 30px 20%;
+}
+
+.input{
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: none;
+    height: 50px;
+    width: 350px;
+    margin: 10px;
+    transition: .5s;
+    font-size: 1.15rem;
+}
+
+.add{
+	outline: black;
+    border: black;
+    height: 50px;
+    width: 50px;
+    background-color: lime;
+    color: black;
+    cursor: pointer;
+    transition: .5s;
+    margin: 0.25rem;
+}
+
+.add:hover{
+	opacity: 0.7;
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-top: 2rem;
+}
+
+.item{
+	padding: 0.5rem;
+	border-bottom: 4px solid #fff;
+	margin-bottom: 1.5rem;
+}
+
+.item_input{
+	background: none;
+	outline: none;
+	border: none;
+	color: #fff;
+	font-size: 1.4rem;
+	width: 245px;
+}
+
+.edit{
+	background: none;
+	outline: none;
+	border: none;
+	color: lime;
+	font-size: 1.4rem;
+	font-family: 'Hind', sans-serif;
+	margin: 0 0.5rem;
+	cursor: pointer;
+}
+
+.remove{
+	background: none;
+	outline: none;
+	border: none;
+	color: #E00;
+	font-size: 1.4rem;
+	font-family: 'Hind', sans-serif;
+	cursor: pointer;
+}
+.kot-center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.video-center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
