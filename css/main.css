@@ -47,7 +47,8 @@
   }
   
   .dropdown-content a:hover {
-      background-color: #3e8e41;
+      background-color: #3e8e41;    
+      opacity: 0.7;
     }
   
   .dropdown:hover .dropdown-content {
@@ -57,9 +58,9 @@
   .dropdown:hover .dropbtn {
       color: white;
     background-color: #3e8e41;
+    opacity: 0.7;
   }
 
-  /* Animowany background strony */
 body {
 	background: linear-gradient(-90deg, #52eebf, #1cc298, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
@@ -142,7 +143,6 @@ body {
 	border: none;
 	color: lime;
 	font-size: 1.4rem;
-	font-family: 'Hind', sans-serif;
 	margin: 0 0.5rem;
 	cursor: pointer;
 }
@@ -153,18 +153,38 @@ body {
 	border: none;
 	color: #E00;
 	font-size: 1.4rem;
-	font-family: 'Hind', sans-serif;
 	cursor: pointer;
 }
-.kot-center{
+.image{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    padding-top: 10%;
 }
 .video-center{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    padding-left: 10%px;
     width: 50%;
+    height: 50%;
+    padding-top: 10%;
+}
+.signature{
+  font-size: 20px;
+  float: left;
+}
+.column {
+  float: left;
+  width: 33.3%;
+  padding-top: 10%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
 }
